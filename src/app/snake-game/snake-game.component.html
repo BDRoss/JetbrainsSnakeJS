@@ -1,0 +1,24 @@
+<div class="score">
+  <h2>Score: {{ score }}</h2>
+</div>
+
+<div class="grid">
+  <div
+    *ngFor="let cell of getGrid(); let i = index"
+    [ngStyle]="{ 'background-color': getCellColor(i) }"
+    class="cell"
+  ></div>
+</div>
+
+<div class="controls">
+  <button *ngIf="!gameStarted || gameOver" (click)="startGame()">
+    {{ gameOver ? 'Play Again' : 'Play' }}
+  </button>
+  <button *ngIf="gameStarted && !gameOver" (click)="togglePause()">
+    {{ paused ? 'Resume' : 'Pause' }}
+  </button>
+</div>
+
+<div *ngIf="paused" class="paused-overlay">
+  <h1>Paused</h1>
+</div>

@@ -1,0 +1,54 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  padding-top: 20px;
+  background-color: #f2f2f2;
+}
+
+.score {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(20, 20px);
+  gap: 1px;
+  margin-bottom: 20px;
+  position: relative; /* Ensure positioning for paused overlay */
+}
+
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+}
+
+.controls {
+  text-align: center;
+}
+
+button {
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.paused-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  z-index: 10;
+}
