@@ -1,0 +1,28 @@
+Jetbrains
+=========
+
+Features:
+--------
+Snake game (that works)
+	- Can run into self, but SHOULDN'T be able to turn around INTO self
+Rainbow cascade on feed
+WASD controls
+Speed up
+Play Button
+Pause button
+Sound
+Death sound
+
+A little funky starting new project
+ - Partly my fault - I didn't set up the angular app correctly, hoping the AI could do it for me - ng new
+ - It assumed I was using css, dumb but easy fix
+Some prompts with Claude, but forced to use 4o-mini because of errors, unsure if this is assisstant or claude's fault
+I asked it to make the game faster the longer the snake is, but I can't take a screencap of that, haha
+Styling is off
+    - Randomly it stopped centering the game
+	- Then it centered it vertically too
+	    - Fixed it, but only mostly?
+	- It's generated styling allowed for a scrollable space, even though the contents fit completely in viewport. Messes up space to pause.
+It eventually got lost and stopped returning whole files, with exceptions (Again, assistant or model?)
+Not having diff or offering to replace specific parts of code is exhausting
+Create a file doesn't really work either, it just gives it a dumb name in addition to the existing file
